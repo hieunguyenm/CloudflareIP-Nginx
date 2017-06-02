@@ -1,6 +1,6 @@
 #!/bin/sh
 
-# Download Cloudflare IPs and save to /etc/nginx/cloudflare
+# Download Cloudflare IPs and save to /etc/nginx/cloudflare.conf
 wget -q https://www.cloudflare.com/ips-v4 -O - > /etc/nginx/cloudflare.conf
 wget -q https://www.cloudflare.com/ips-v6 -O - >> /etc/nginx/cloudflare.conf
 
