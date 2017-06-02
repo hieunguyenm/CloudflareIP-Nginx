@@ -2,9 +2,9 @@
 
 Restore original visitor IP instead of Cloudflare IP in Nginx
 
-## Prerequisutes
+## Prerequisites
 
-The script requires wget, sed and printf (Tested on Ubuntu 16.04, these packages are pre-installed).
+The script requires *wget*, *sed* and *printf* (Tested on Ubuntu 16.04, these packages are pre-installed).
 
 Nginx must have been installed/built with the module **ngx_http_realip_module**.
 
@@ -16,7 +16,9 @@ nginx -V
 
 to check what modules Nginx was built with.
 
+
 ## Running the script
+
 
 1. Set the script to executable
 
