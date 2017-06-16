@@ -32,15 +32,13 @@ sudo chmod +x cloudflare.sh
 sudo ./cloudflare.sh
 ```
 
-3. Add include to nginx server blocks
+3. Add include to `/etc/nginx/nginx.conf`
 
 ```
-server {
+http {
 	...
 	
 	include "/etc/nginx/cloudflare.conf";
-
-	...
 } 
 ```
 
