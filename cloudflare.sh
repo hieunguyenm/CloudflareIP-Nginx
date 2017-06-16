@@ -11,5 +11,5 @@ sed -i 's/$/;/' /etc/nginx/cloudflare.conf
 # Append real_ip_header to file
 printf "\nreal_ip_header CF-Connecting-IP;\n" >> /etc/nginx/cloudflare.conf
 
-# Reload nginx
-/usr/sbin/nginx -s reload
+# Restart nginx
+/usr/sbin/service nginx restart
