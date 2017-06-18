@@ -1,4 +1,4 @@
-#!/bin/sh
+#!/bin/bash
 
 # Download Cloudflare IPs and save to /etc/nginx/cloudflare.conf
 wget -q https://www.cloudflare.com/ips-v4 -O - > /etc/nginx/cloudflare.conf
