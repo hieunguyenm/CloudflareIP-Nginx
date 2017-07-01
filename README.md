@@ -57,6 +57,6 @@ sudo crontab -e
 * Add the following line
 
 	```
-	0 0 * * 0 root <path to script>
+	0 0 * * 0 <path to script>
 	```
 
