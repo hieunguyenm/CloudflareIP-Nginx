@@ -38,13 +38,19 @@ sudo ./cloudflare.sh
 http {
 	...
 	
-	include "/etc/nginx/cloudflare.conf";
+	include /etc/nginx/cloudflare.conf;
 } 
 ```
 
-4. (Optional) Add script to cron to run weekly
+4. Test and reload nginx
+```
+sudo nginx -t
+sudo service nginx restart
+```
 
-```sh
+5. (Optional) Add script to cron to run weekly
+
+```
 sudo crontab -e
 ```
 
