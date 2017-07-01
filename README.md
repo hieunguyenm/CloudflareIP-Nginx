@@ -42,13 +42,7 @@ http {
 } 
 ```
 
-4. Test and reload nginx
-```
-sudo nginx -t
-sudo service nginx restart
-```
-
-5. (Optional) Add script to cron to run weekly
+4. (Optional) Add script to cron to run weekly
 
 ```
 sudo crontab -e
